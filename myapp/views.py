@@ -20,7 +20,7 @@ from torch.utils.data import TensorDataset, DataLoader
 from django.views.decorators.csrf import csrf_exempt
 
 flag = False
-datasetFileName = "no_anomaly.csv"
+datasetFileName = "main.csv"
 
 class LSTMNet(nn.Module):
 	def __init__(self, input_dim, hidden_dim, output_dim, n_layers, drop_prob=0.2):
@@ -72,10 +72,10 @@ def evaluate(model, test_x,label_scaler):
 	#print(outputs[i][0],targets[i][0])
 	#print("MSE: {}%".format(MSE*100))
 	return outputs		
-lookback = 10
+lookback = 12
 device =torch.device('cuda')
-temperature_model = LSTMNet(9, 256, 1, 2)
-temperature_train_loader , sc, temperature_label_scaler , s_data= getTrainLoaderFirstTime(datasetFileName,2)
+temperature_model = LSTMNet(9, 256, 1,2)
+temperature_train_loader , sc, temperature_label_scaler , s_data= getTrainLoaderFirstTime(datasetFileName,1)
 model_exists = os.path.isfile('myapp/lstm_model_temperature_9.pt')
 if(not(model_exists)):
 	temperature_model = train(temperature_train_loader , 0.001,  model_type="LSTM")
@@ -124,7 +124,7 @@ def predict_temperature(request):
 		for row in csvreader:
 			line_count += 1
 	if line_count >= 51:
-		train_loader , scaler_later , temperature_label_scaler, data = getTrainLoaderLater(csvFileName,datasetFileName,2)
+		train_loader , scaler_later , temperature_label_scaler, data = getTrainLoaderLater(csvFileName,datasetFileName,1)
 		# delete new_temp
 		## Will call train 
 		temperature_model = train(train_loader , 0.001,  model_type="LSTM")
@@ -132,12 +132,14 @@ def predict_temperature(request):
 		os.remove(csvFileName)
 	#df = df.sort_values('Humidity').drop('Humidity',axis=1)
 	# Processing the time data into suitable input formats
+	df['minute'] =  df['DateTime'].apply(lambda x: '{:02d}'.format(x.minute)).astype(int)
 	df['hour'] = df.apply(lambda x: x['DateTime'].hour,axis=1)
 	df['dayofweek'] = df.apply(lambda x: x['DateTime'].dayofweek,axis=1)
 	df['month'] = df.apply(lambda x: x['DateTime'].month,axis=1)
-	df['dayofyear'] = df.apply(lambda x: x['DateTime'].dayofyear,axis=1)
+	#df['dayofyear'] = df.apply(lambda x: x['DateTime'].dayofyear,axis=1)
 	df = df.sort_values('DateTime').drop('DateTime',axis=1)
 	df['Bus'] = df['Bus'].map({'Bus 0': 0, 'Bus 1': 1, 'Bus 2': 2, 'Bus 3': 3, 'Bus 4': 4, 'Bus 5': 5  }) ## For Bus mapping
+	#df = df.drop('Light',axis=1)
 	#df = df.drop('Light',axis=1)
 	#df = df.drop('Humidity',axis=1)
 	#df = df.drop('CO2',axis=1)
@@ -173,9 +175,11 @@ def predict_temperature(request):
 		#print(prediction[0][0].value())
 		#print(json_prediction)
 		#print((df['Temperature'].values)[0])
-		if abs(float(json_prediction)-float((df['Temperature'].values)[0])) > 0.3:
+		proportion = abs(float(json_prediction)-float((df['Power'].values)[0])) / abs(float((df['Power'].values)[0]))
+		#if(proportion)
+		if proportion > 0.3 and line_count > 5:
 			anomaly="Yes"
-			response = HttpResponse(json.dumps({"prediction":json_prediction,"actual":str(float((df['Temperature'].values)[0])),"is_anomaly":str("WARNING AN ANOMALY DETECTED AT BUS ")+str(float((df['Bus'].values)[0]))}) + "\n")
+			response = HttpResponse(json.dumps({"prediction":json_prediction,"actual":str(float((df['Power'].values)[0])),"is_anomaly":str("WARNING AN ANOMALY DETECTED AT BUS ")+str(float((df['Bus'].values)[0]))}) + "\n")
 		else:
 			anomaly="No"
 
@@ -188,7 +192,7 @@ def predict_temperature(request):
 			#merged_response = {}
 			#merged_response.update(response1)
 			#merged_response.update(response2)
-			response = HttpResponse(json.dumps({"prediction":json_prediction,"actual":str(float((df['Temperature'].values)[0])),"is_anomaly":str(anomaly)}) + "\n")
+			response = HttpResponse(json.dumps({"prediction":json_prediction,"actual":str(float((df['Power'].values)[0])),"is_anomaly":str(anomaly)}) + "\n")
 		return response
 	else:
 		return JsonResponse({"available_after":(lookback-len(all_data_temperature))})#(lookback-len(all_data))

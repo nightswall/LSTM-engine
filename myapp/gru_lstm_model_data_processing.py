@@ -25,21 +25,31 @@ def getTrainLoaderFirstTime(filename,attribute_number):
 
     df=pd.read_csv(filename,parse_dates=['DateTime'])
     #print(df.index)
-    # Processing the time data into suitable input formats
+    # Processing the time data into suitable input formats,
+    # Processing the time data into suitable input formats,
+    #df['DateTime'] = pd.to_datetime(df['DateTime'])
+    # add a 'totalseconds' column using the 'total_seconds' method
+    #df['totalseconds'] = df['DateTime'].apply(lambda x: x.timestamp())
+    df['minute'] = df['DateTime'].apply(lambda x: '{:02d}'.format(x.minute)).astype(int)
     df['hour'] = df.apply(lambda x: x['DateTime'].hour,axis=1)
     df['dayofweek'] = df.apply(lambda x: x['DateTime'].dayofweek,axis=1)
     df['month'] = df.apply(lambda x: x['DateTime'].month,axis=1)
-    df['dayofyear'] = df.apply(lambda x: x['DateTime'].dayofyear,axis=1)
+    #df['dayofyear'] = df.apply(lambda x: x['DateTime'].dayofyear,axis=1)
     df = df.sort_values('DateTime').drop('DateTime',axis=1)
     df['Bus'] = df['Bus'].map({'Bus 0': 0, 'Bus 1': 1, 'Bus 2': 2, 'Bus 3': 3, 'Bus 4': 4, 'Bus 5': 5  }) ## For Bus mapping
+    #df = df.drop('Voltage',axis=1)
+    #df = df.drop('Temperature',axis=1)
+    #df = df.drop('Current',axis = 1)
+
+
     # Scaling the input data
     sc = MinMaxScaler()
     label_sc = MinMaxScaler()
     data = sc.fit_transform(df.values)
-   
+
     # Obtaining the Scale for the labels(usage data) so that output can be re-scaled to actual value during evaluation
     label_sc.fit(df.iloc[:,attribute_number].values.reshape(-1,1))
-    lookback=90
+    lookback= 12
     inputs = np.zeros((len(data)-lookback,lookback,df.shape[1]))
     labels = np.zeros(len(data)-lookback)
     for i in range(lookback, len(data)):
@@ -58,7 +68,7 @@ def getTrainLoaderFirstTime(filename,attribute_number):
     #    train_x = np.concatenate((train_x,inputs[:-test_portion]))
     #    train_y = np.concatenate((train_y,labels[:-test_portion]))
 
-    batch_size = 1024
+    batch_size = 2
     train_data = TensorDataset(torch.from_numpy(train_x), torch.from_numpy(train_y))
     train_loader = DataLoader(train_data, shuffle=True, batch_size=batch_size, drop_last=True)
     #print( train_loader, sc, label_sc ,df)
@@ -94,14 +104,20 @@ def getTrainLoaderLater(filename, datasetFileName, attribute_number):
     test_y = {}
 
     df=pd.read_csv(datasetFileName,parse_dates=['DateTime'])
-    #print(df)
-    # Processing the time data into suitable input formats
+    #print(df.index)
+    # Processing the time data into suitable input formats,
+    # Processing the time data into suitable input formats,
+    #df['DateTime'] = pd.to_datetime(df['DateTime'])
+    # add a 'totalseconds' column using the 'total_seconds' method
+    #df['totalseconds'] = df['DateTime'].apply(lambda x: x.timestamp())
+    df['minute'] =  df['DateTime'].apply(lambda x: '{:02d}'.format(x.minute)).astype(int)
     df['hour'] = df.apply(lambda x: x['DateTime'].hour,axis=1)
     df['dayofweek'] = df.apply(lambda x: x['DateTime'].dayofweek,axis=1)
     df['month'] = df.apply(lambda x: x['DateTime'].month,axis=1)
-    df['dayofyear'] = df.apply(lambda x: x['DateTime'].dayofyear,axis=1)
+    #df['dayofyear'] = df.apply(lambda x: x['DateTime'].dayofyear,axis=1)
     df = df.sort_values('DateTime').drop('DateTime',axis=1)
     df['Bus'] = df['Bus'].map({'Bus 0': 0, 'Bus 1': 1, 'Bus 2': 2, 'Bus 3': 3, 'Bus 4': 4, 'Bus 5': 5  }) ## For Bus mapping
+
     # Scaling the input data
     sc = MinMaxScaler()
     label_sc = MinMaxScaler()
@@ -109,7 +125,7 @@ def getTrainLoaderLater(filename, datasetFileName, attribute_number):
    
     # Obtaining the Scale for the labels(usage data) so that output can be re-scaled to actual value during evaluation
     label_sc.fit(df.iloc[:,attribute_number].values.reshape(-1,1))
-    lookback=90
+    lookback=12
     inputs = np.zeros((len(data)-lookback,lookback,df.shape[1]))
     labels = np.zeros(len(data)-lookback)
     for i in range(lookback, len(data)):
@@ -128,7 +144,7 @@ def getTrainLoaderLater(filename, datasetFileName, attribute_number):
     #    train_x = np.concatenate((train_x,inputs[:-test_portion]))
     #    train_y = np.concatenate((train_y,labels[:-test_portion]))
 
-    batch_size = 1024
+    batch_size = 2
     train_data = TensorDataset(torch.from_numpy(train_x), torch.from_numpy(train_y))
     train_loader = DataLoader(train_data, shuffle=True, batch_size=batch_size, drop_last=True)
     #print( train_loader, sc, label_sc ,df)

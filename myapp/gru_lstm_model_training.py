@@ -34,14 +34,13 @@ class LSTMNet(nn.Module):
 				  weight.new(self.n_layers, batch_size, self.hidden_dim).zero_().to(torch.device("cuda")))
 		return hidden
 
-def train(train_loader, learn_rate, hidden_dim=256, EPOCHS=5, model_type="GRU"):
+def train(train_loader, learn_rate, hidden_dim=256, EPOCHS=10, model_type="GRU"):
     # Setting common hyperparameters
     device = torch.device("cuda")
     input_dim = next(iter(train_loader))[0].shape[2]
     output_dim = 1
     n_layers = 2
-    batch_size = 1024
-    # Instantiating the models
+    batch_size = 2
     if model_type == "GRU":
         model = GRUNet(input_dim, hidden_dim, output_dim, n_layers)
     else:

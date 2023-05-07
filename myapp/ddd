@@ -1,0 +1,638 @@
+lb 12 lr 0.001 b 4
+{"prediction": "-46.54269", "actual": "60.17663400000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-28.076326", "actual": "49.38388499999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-9.625638", "actual": "3.348465999999995", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "3.2496545", "actual": "9.061775000000004", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "14.808601", "actual": "34.59502199999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "21.513433", "actual": "59.13199000000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "31.548891", "actual": "49.13968099999999", "is_anomaly": "No"}
+{"prediction": "34.46656", "actual": "54.987694000000005", "is_anomaly": "No"}
+{"prediction": "38.25799", "actual": "64.86091", "is_anomaly": "No"}
+{"prediction": "35.7298", "actual": "3.781216000000008", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "35.934914", "actual": "46.030017", "is_anomaly": "No"}
+{"prediction": "39.741474", "actual": "23.77625", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "40.852726", "actual": "29.457296", "is_anomaly": "No"}
+{"prediction": "36.08654", "actual": "39.61379", "is_anomaly": "No"}
+{"prediction": "32.974674", "actual": "35.520939", "is_anomaly": "No"}
+{"prediction": "33.35005", "actual": "70.32929299999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "36.478035", "actual": "35.231603", "is_anomaly": "No"}
+{"prediction": "38.2214", "actual": "67.151036", "is_anomaly": "No"}
+{"prediction": "41.28174", "actual": "67.387744", "is_anomaly": "No"}
+{"prediction": "45.624832", "actual": "74.086655", "is_anomaly": "No"}
+{"prediction": "42.580055", "actual": "51.273365", "is_anomaly": "No"}
+{"prediction": "45.930477", "actual": "74.25212", "is_anomaly": "No"}
+{"prediction": "44.875652", "actual": "53.44609199999999", "is_anomaly": "No"}
+{"prediction": "44.418472", "actual": "90.5937", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "44.340996", "actual": "52.16828", "is_anomaly": "No"}
+{"prediction": "43.183186", "actual": "53.494739", "is_anomaly": "No"}
+{"prediction": "46.104595", "actual": "77.67418899999998", "is_anomaly": "No"}
+{"prediction": "44.697678", "actual": "67.229255", "is_anomaly": "No"}
+{"prediction": "48.02453", "actual": "73.765963", "is_anomaly": "No"}
+{"prediction": "50.813175", "actual": "45.435438000000005", "is_anomaly": "No"}
+{"prediction": "54.90775", "actual": "42.16153899999999", "is_anomaly": "No"}
+{"prediction": "56.76647", "actual": "26.83383", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "61.048584", "actual": "38.15738100000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "62.725067", "actual": "38.198472", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "67.49934", "actual": "49.781897", "is_anomaly": "No"}
+{"prediction": "67.96817", "actual": "88.65270000000001", "is_anomaly": "No"}
+{"prediction": "69.09958", "actual": "17.746452000000005", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-6.322342", "actual": "90.85435", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-6.734768", "actual": "104.609006", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "8.587559", "actual": "54.625797", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "19.987116", "actual": "57.496407000000005", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "29.585533", "actual": "48.21176199999999", "is_anomaly": "No"}
+{"prediction": "34.927917", "actual": "65.181262", "is_anomaly": "No"}
+{"prediction": "39.42237", "actual": "72.31159400000001", "is_anomaly": "No"}
+{"prediction": "41.97366", "actual": "41.891209", "is_anomaly": "No"}
+{"prediction": "44.30408", "actual": "61.49700000000001", "is_anomaly": "No"}
+{"prediction": "48.265987", "actual": "56.71899599999999", "is_anomaly": "No"}
+{"prediction": "46.170815", "actual": "75.748875", "is_anomaly": "No"}
+{"prediction": "50.345993", "actual": "44.85612600000001", "is_anomaly": "No"}
+{"prediction": "54.76899", "actual": "102.545288", "is_anomaly": "No"}
+{"prediction": "56.64952", "actual": "43.834452", "is_anomaly": "No"}
+{"prediction": "59.04901", "actual": "110.216416", "is_anomaly": "No"}
+{"prediction": "59.811363", "actual": "95.488524", "is_anomaly": "No"}
+{"prediction": "61.43182", "actual": "60.171997", "is_anomaly": "No"}
+{"prediction": "62.190414", "actual": "56.00759899999999", "is_anomaly": "No"}
+{"prediction": "60.666885", "actual": "77.497502", "is_anomaly": "No"}
+{"prediction": "60.316788", "actual": "63.104162", "is_anomaly": "No"}
+{"prediction": "58.97873", "actual": "97.82676", "is_anomaly": "No"}
+{"prediction": "59.629158", "actual": "107.27407", "is_anomaly": "No"}
+{"prediction": "56.9103", "actual": "33.04630000000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "60.013344", "actual": "54.540101", "is_anomaly": "No"}
+{"prediction": "57.91519", "actual": "87.010016", "is_anomaly": "No"}
+{"prediction": "63.119045", "actual": "58.03898399999999", "is_anomaly": "No"}
+{"prediction": "66.87381", "actual": "67.50447700000001", "is_anomaly": "No"}
+{"prediction": "68.6093", "actual": "65.79021", "is_anomaly": "No"}
+{"prediction": "70.05869", "actual": "112.44135599999998", "is_anomaly": "No"}
+{"prediction": "72.2831", "actual": "74.82737499999999", "is_anomaly": "No"}
+{"prediction": "72.39293", "actual": "49.456374", "is_anomaly": "No"}
+{"prediction": "74.67239", "actual": "104.704374", "is_anomaly": "No"}
+{"prediction": "77.00813", "actual": "116.007381", "is_anomaly": "No"}
+{"prediction": "74.34887", "actual": "95.396748", "is_anomaly": "No"}
+{"prediction": "73.662186", "actual": "125.708775", "is_anomaly": "No"}
+{"prediction": "73.903625", "actual": "61.259856", "is_anomaly": "No"}
+{"prediction": "71.2693", "actual": "125.297613", "is_anomaly": "No"}
+{"prediction": "69.76358", "actual": "66.200694", "is_anomaly": "No"}
+{"prediction": "67.86459", "actual": "48.49919600000001", "is_anomaly": "No"}
+{"prediction": "69.709274", "actual": "80.517762", "is_anomaly": "No"}
+{"prediction": "69.33936", "actual": "54.622654", "is_anomaly": "No"}
+{"prediction": "68.171646", "actual": "138.78478900000002", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "71.324036", "actual": "115.397515", "is_anomaly": "No"}
+{"prediction": "74.82886", "actual": "75.49248700000001", "is_anomaly": "No"}
+{"prediction": "77.629486", "actual": "75.574289", "is_anomaly": "No"}
+{"prediction": "82.3581", "actual": "100.198155", "is_anomaly": "No"}
+{"prediction": "82.989174", "actual": "63.61019999999999", "is_anomaly": "No"}
+{"prediction": "86.93523", "actual": "106.53209499999998", "is_anomaly": "No"}
+{"prediction": "86.61582", "actual": "139.02827999999997", "is_anomaly": "No"}
+{"prediction": "85.31999", "actual": "137.60277000000002", "is_anomaly": "No"}
+{"prediction": "-13.706043", "actual": "72.07064600000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-3.1551096", "actual": "119.629622", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "29.465506", "actual": "56.81044399999999", "is_anomaly": "No"}
+{"prediction": "52.161255", "actual": "80.66492299999999", "is_anomaly": "No"}
+{"prediction": "65.516846", "actual": "46.669957", "is_anomaly": "No"}
+{"prediction": "75.756805", "actual": "65.40611899999999", "is_anomaly": "No"}
+{"prediction": "86.216095", "actual": "96.080096", "is_anomaly": "No"}
+{"prediction": "90.777756", "actual": "118.12585", "is_anomaly": "No"}
+{"prediction": "97.50464", "actual": "112.952325", "is_anomaly": "No"}
+{"prediction": "102.91047", "actual": "56.65263499999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "107.81202", "actual": "120.702158", "is_anomaly": "No"}
+{"prediction": "108.48883", "actual": "136.784401", "is_anomaly": "No"}
+{"prediction": "111.95427", "actual": "45.333371", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "110.04135", "actual": "142.41023", "is_anomaly": "No"}
+{"prediction": "110.08922", "actual": "128.731464", "is_anomaly": "No"}
+{"prediction": "105.83985", "actual": "92.133938", "is_anomaly": "No"}
+{"prediction": "102.022224", "actual": "97.352206", "is_anomaly": "No"}
+{"prediction": "97.79677", "actual": "106.26213600000004", "is_anomaly": "No"}
+{"prediction": "94.76213", "actual": "96.59181600000002", "is_anomaly": "No"}
+{"prediction": "92.73857", "actual": "110.33119", "is_anomaly": "No"}
+{"prediction": "88.13001", "actual": "65.7885", "is_anomaly": "No"}
+{"prediction": "91.39148", "actual": "97.756485", "is_anomaly": "No"}
+{"prediction": "95.59552", "actual": "136.87254900000002", "is_anomaly": "No"}
+{"prediction": "94.40638", "actual": "118.855384", "is_anomaly": "No"}
+{"prediction": "101.197075", "actual": "67.767786", "is_anomaly": "No"}
+{"prediction": "104.73148", "actual": "138.87048", "is_anomaly": "No"}
+{"prediction": "107.55276", "actual": "92.47573199999998", "is_anomaly": "No"}
+{"prediction": "109.67657", "actual": "46.68876599999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "111.56165", "actual": "57.58656599999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "112.20286", "actual": "116.232732", "is_anomaly": "No"}
+{"prediction": "112.9628", "actual": "150.77864599999998", "is_anomaly": "No"}
+{"prediction": "109.97048", "actual": "91.096438", "is_anomaly": "No"}
+{"prediction": "109.11899", "actual": "129.4581", "is_anomaly": "No"}
+{"prediction": "108.75196", "actual": "135.99193100000002", "is_anomaly": "No"}
+{"prediction": "107.34235", "actual": "49.12565", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "103.591194", "actual": "148.435155", "is_anomaly": "No"}
+{"prediction": "105.76154", "actual": "51.704317", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "103.97014", "actual": "137.414477", "is_anomaly": "No"}
+{"prediction": "100.13331", "actual": "86.944584", "is_anomaly": "No"}
+{"prediction": "97.3361", "actual": "69.422588", "is_anomaly": "No"}
+{"prediction": "97.80918", "actual": "140.329607", "is_anomaly": "No"}
+{"prediction": "98.81893", "actual": "147.48590000000002", "is_anomaly": "No"}
+{"prediction": "98.16122", "actual": "120.900284", "is_anomaly": "No"}
+{"prediction": "101.681465", "actual": "74.096927", "is_anomaly": "No"}
+{"prediction": "105.09388", "actual": "155.8647", "is_anomaly": "No"}
+{"prediction": "103.33952", "actual": "86.085855", "is_anomaly": "No"}
+{"prediction": "108.34652", "actual": "138.73919999999998", "is_anomaly": "No"}
+{"prediction": "105.789406", "actual": "123.77917", "is_anomaly": "No"}
+{"prediction": "109.39294", "actual": "116.112026", "is_anomaly": "No"}
+{"prediction": "107.90942", "actual": "102.07811600000002", "is_anomaly": "No"}
+{"prediction": "2.4217284", "actual": "147.505976", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-2.2455053", "actual": "120.58349199999998", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "28.340303", "actual": "126.517528", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "49.136047", "actual": "115.221915", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "60.850456", "actual": "101.631595", "is_anomaly": "No"}
+{"prediction": "75.203766", "actual": "138.81898", "is_anomaly": "No"}
+{"prediction": "81.60691", "actual": "70.418", "is_anomaly": "No"}
+{"prediction": "89.86244", "actual": "127.450434", "is_anomaly": "No"}
+{"prediction": "94.796234", "actual": "142.25611600000002", "is_anomaly": "No"}
+{"prediction": "98.44565", "actual": "68.018924", "is_anomaly": "No"}
+{"prediction": "100.452545", "actual": "98.406816", "is_anomaly": "No"}
+{"prediction": "103.32022", "actual": "145.760139", "is_anomaly": "No"}
+{"prediction": "104.08862", "actual": "122.344421", "is_anomaly": "No"}
+{"prediction": "104.925415", "actual": "117.677374", "is_anomaly": "No"}
+{"prediction": "104.95561", "actual": "75.8527", "is_anomaly": "No"}
+{"prediction": "104.27218", "actual": "65.085264", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "104.854774", "actual": "67.08279399999998", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "101.971436", "actual": "157.84819900000002", "is_anomaly": "No"}
+{"prediction": "101.448074", "actual": "66.53915", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "101.36443", "actual": "81.42716399999999", "is_anomaly": "No"}
+{"prediction": "97.89704", "actual": "122.47573000000004", "is_anomaly": "No"}
+{"prediction": "96.561775", "actual": "72.351492", "is_anomaly": "No"}
+{"prediction": "96.56249", "actual": "103.36958599999998", "is_anomaly": "No"}
+{"prediction": "95.99214", "actual": "64.17854", "is_anomaly": "No"}
+{"prediction": "95.65829", "actual": "124.902923", "is_anomaly": "No"}
+{"prediction": "93.84282", "actual": "134.389054", "is_anomaly": "No"}
+{"prediction": "91.33716", "actual": "89.55083600000002", "is_anomaly": "No"}
+{"prediction": "88.11773", "actual": "93.750383", "is_anomaly": "No"}
+{"prediction": "89.49872", "actual": "138.47814799999998", "is_anomaly": "No"}
+{"prediction": "85.65066", "actual": "73.916414", "is_anomaly": "No"}
+{"prediction": "83.74139", "actual": "92.867375", "is_anomaly": "No"}
+{"prediction": "83.86132", "actual": "90.13982199999998", "is_anomaly": "No"}
+{"prediction": "80.945854", "actual": "158.87246800000003", "is_anomaly": "No"}
+{"prediction": "80.96656", "actual": "92.961535", "is_anomaly": "No"}
+{"prediction": "78.049614", "actual": "101.67528099999998", "is_anomaly": "No"}
+{"prediction": "79.661995", "actual": "133.400215", "is_anomaly": "No"}
+{"prediction": "81.826485", "actual": "75.97363200000001", "is_anomaly": "No"}
+{"prediction": "82.01064", "actual": "95.092116", "is_anomaly": "No"}
+{"prediction": "82.94214", "actual": "123.67815500000005", "is_anomaly": "No"}
+{"prediction": "86.372086", "actual": "87.880716", "is_anomaly": "No"}
+{"prediction": "85.798164", "actual": "138.690618", "is_anomaly": "No"}
+{"prediction": "87.0083", "actual": "73.25347000000001", "is_anomaly": "No"}
+{"prediction": "85.965904", "actual": "113.7424", "is_anomaly": "No"}
+{"prediction": "88.95188", "actual": "136.52457199999998", "is_anomaly": "No"}
+{"prediction": "87.60132", "actual": "168.014261", "is_anomaly": "No"}
+{"prediction": "88.41343", "actual": "69.35568599999999", "is_anomaly": "No"}
+{"prediction": "90.21505", "actual": "132.48803099999998", "is_anomaly": "No"}
+{"prediction": "89.01888", "actual": "87.26312800000002", "is_anomaly": "No"}
+{"prediction": "89.18757", "actual": "127.682004", "is_anomaly": "No"}
+{"prediction": "90.294304", "actual": "111.176654", "is_anomaly": "No"}
+{"prediction": "-18.983318", "actual": "114.311482", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "16.235977", "actual": "151.372484", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "33.22856", "actual": "115.63085600000002", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "49.675846", "actual": "99.316937", "is_anomaly": "No"}
+{"prediction": "64.93411", "actual": "69.01345", "is_anomaly": "No"}
+{"prediction": "79.55329", "actual": "72.14411999999999", "is_anomaly": "No"}
+{"prediction": "82.58542", "actual": "58.35793599999999", "is_anomaly": "No"}
+{"prediction": "91.24782", "actual": "100.110755", "is_anomaly": "No"}
+{"prediction": "92.39724", "actual": "53.729336", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "97.77286", "actual": "124.931874", "is_anomaly": "No"}
+{"prediction": "99.367744", "actual": "57.60668499999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "99.98595", "actual": "130.42937300000003", "is_anomaly": "No"}
+{"prediction": "103.16719", "actual": "97.02408", "is_anomaly": "No"}
+{"prediction": "102.82563", "actual": "89.552217", "is_anomaly": "No"}
+{"prediction": "101.959595", "actual": "134.88676600000002", "is_anomaly": "No"}
+{"prediction": "98.93839", "actual": "54.89278200000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "95.97121", "actual": "115.20584999999998", "is_anomaly": "No"}
+{"prediction": "90.8646", "actual": "109.937784", "is_anomaly": "No"}
+{"prediction": "88.23842", "actual": "101.310536", "is_anomaly": "No"}
+{"prediction": "80.40023", "actual": "120.53805900000002", "is_anomaly": "No"}
+{"prediction": "79.58618", "actual": "136.005948", "is_anomaly": "No"}
+{"prediction": "72.97384", "actual": "113.555802", "is_anomaly": "No"}
+{"prediction": "74.65434", "actual": "90.982232", "is_anomaly": "No"}
+{"prediction": "74.94088", "actual": "66.564537", "is_anomaly": "No"}
+{"prediction": "75.566025", "actual": "41.304007", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "81.03439", "actual": "102.371869", "is_anomaly": "No"}
+{"prediction": "78.74514", "actual": "82.50315900000001", "is_anomaly": "No"}
+{"prediction": "83.1338", "actual": "43.167613", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "85.6985", "actual": "91.87589799999998", "is_anomaly": "No"}
+{"prediction": "87.05525", "actual": "79.681106", "is_anomaly": "No"}
+{"prediction": "88.853966", "actual": "113.087124", "is_anomaly": "No"}
+{"prediction": "92.60898", "actual": "57.96033599999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "93.92244", "actual": "111.086849", "is_anomaly": "No"}
+{"prediction": "93.737915", "actual": "70.205935", "is_anomaly": "No"}
+{"prediction": "91.68841", "actual": "91.031262", "is_anomaly": "No"}
+{"prediction": "87.33357", "actual": "92.320796", "is_anomaly": "No"}
+{"prediction": "86.755646", "actual": "59.343708", "is_anomaly": "No"}
+{"prediction": "83.46463", "actual": "63.62654599999999", "is_anomaly": "No"}
+{"prediction": "76.34736", "actual": "51.345789", "is_anomaly": "No"}
+{"prediction": "74.11329", "actual": "46.925753", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "70.53938", "actual": "70.786666", "is_anomaly": "No"}
+{"prediction": "71.09585", "actual": "34.443117", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "67.34974", "actual": "43.20614599999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "70.48996", "actual": "82.65287400000001", "is_anomaly": "No"}
+{"prediction": "69.529594", "actual": "112.595805", "is_anomaly": "No"}
+{"prediction": "71.391624", "actual": "31.241231", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "72.80116", "actual": "87.25963499999999", "is_anomaly": "No"}
+{"prediction": "71.46107", "actual": "63.799607", "is_anomaly": "No"}
+{"prediction": "70.46373", "actual": "71.036804", "is_anomaly": "No"}
+{"prediction": "67.95858", "actual": "101.02042399999998", "is_anomaly": "No"}
+{"prediction": "-29.927155", "actual": "89.45520400000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-18.533464", "actual": "80.272888", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-2.186659", "actual": "62.377775", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "9.606457", "actual": "91.182344", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "24.085657", "actual": "63.42705199999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "38.931026", "actual": "53.917144", "is_anomaly": "No"}
+{"prediction": "43.170242", "actual": "39.963287", "is_anomaly": "No"}
+{"prediction": "51.993023", "actual": "26.53017599999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "56.883465", "actual": "66.48979399999999", "is_anomaly": "No"}
+{"prediction": "60.992897", "actual": "83.845139", "is_anomaly": "No"}
+{"prediction": "65.86675", "actual": "48.947934", "is_anomaly": "No"}
+{"prediction": "68.70782", "actual": "47.884479", "is_anomaly": "No"}
+{"prediction": "70.344734", "actual": "34.172392", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "70.131195", "actual": "38.55022", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "71.80052", "actual": "32.690743", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "70.03823", "actual": "62.68226899999999", "is_anomaly": "No"}
+{"prediction": "67.91261", "actual": "48.01088899999999", "is_anomaly": "No"}
+{"prediction": "63.815956", "actual": "30.420742", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "57.925117", "actual": "49.142968", "is_anomaly": "No"}
+{"prediction": "55.643417", "actual": "31.549574", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "54.60753", "actual": "56.278720000000014", "is_anomaly": "No"}
+{"prediction": "50.875298", "actual": "24.51711600000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "48.414124", "actual": "37.754874", "is_anomaly": "No"}
+{"prediction": "45.242527", "actual": "39.587544", "is_anomaly": "No"}
+{"prediction": "43.2421", "actual": "20.675314000000004", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "40.732624", "actual": "42.818495000000006", "is_anomaly": "No"}
+{"prediction": "41.6176", "actual": "64.12529400000001", "is_anomaly": "No"}
+{"prediction": "40.91695", "actual": "58.673478", "is_anomaly": "No"}
+{"prediction": "38.58924", "actual": "15.054058999999992", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "38.81176", "actual": "15.392166000000003", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "36.977234", "actual": "52.41125", "is_anomaly": "No"}
+{"prediction": "38.217926", "actual": "26.887435", "is_anomaly": "No"}
+{"prediction": "35.640713", "actual": "30.33182999999999", "is_anomaly": "No"}
+{"prediction": "35.003437", "actual": "28.599498", "is_anomaly": "No"}
+{"prediction": "34.444733", "actual": "34.616040000000005", "is_anomaly": "No"}
+{"prediction": "31.642878", "actual": "35.61426399999999", "is_anomaly": "No"}
+{"prediction": "31.722649", "actual": "49.056137000000014", "is_anomaly": "No"}
+{"prediction": "33.887493", "actual": "30.242574", "is_anomaly": "No"}
+{"prediction": "35.702965", "actual": "32.1866", "is_anomaly": "No"}
+{"prediction": "32.821487", "actual": "30.300682999999985", "is_anomaly": "No"}
+{"prediction": "30.595661", "actual": "52.23472600000001", "is_anomaly": "No"}
+{"prediction": "32.67045", "actual": "24.696437000000003", "is_anomaly": "No"}
+{"prediction": "31.181732", "actual": "37.778796", "is_anomaly": "No"}
+{"prediction": "30.086422", "actual": "21.530907", "is_anomaly": "No"}
+{"prediction": "28.665442", "actual": "49.61617700000001", "is_anomaly": "No"}
+{"prediction": "27.963331", "actual": "36.646645", "is_anomaly": "No"}
+{"prediction": "27.41803", "actual": "34.347451", "is_anomaly": "No"}
+{"prediction": "28.60725", "actual": "19.074553", "is_anomaly": "No"}
+{"prediction": "27.766645", "actual": "33.69210599999999", "is_anomaly": "No"}
+{"prediction": "27.558783", "actual": "39.227087", "is_anomaly": "No"}
+{"prediction": "-34.05631", "actual": "15.840796999999997", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-15.460797", "actual": "25.082574999999995", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-2.377119", "actual": "45.16488300000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "7.8890543", "actual": "53.85712", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "13.097898", "actual": "25.565218", "is_anomaly": "No"}
+{"prediction": "19.647856", "actual": "67.103096", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "23.236359", "actual": "54.578719999999976", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "25.663502", "actual": "47.94904500000001", "is_anomaly": "No"}
+{"prediction": "25.590128", "actual": "19.325592", "is_anomaly": "No"}
+{"prediction": "26.70197", "actual": "33.99870799999999", "is_anomaly": "No"}
+{"prediction": "27.902521", "actual": "67.60235999999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "26.443562", "actual": "60.62358000000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "26.331905", "actual": "17.929161999999998", "is_anomaly": "No"}
+{"prediction": "28.193325", "actual": "29.494857000000003", "is_anomaly": "No"}
+{"prediction": "30.682095", "actual": "43.425867", "is_anomaly": "No"}
+{"prediction": "29.820993", "actual": "17.837131999999997", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "34.17629", "actual": "64.017883", "is_anomaly": "No"}
+{"prediction": "36.56473", "actual": "45.981075", "is_anomaly": "No"}
+{"prediction": "38.23757", "actual": "71.560783", "is_anomaly": "No"}
+{"prediction": "36.48701", "actual": "37.622872", "is_anomaly": "No"}
+{"prediction": "36.509293", "actual": "46.694611", "is_anomaly": "No"}
+{"prediction": "39.407356", "actual": "47.675706", "is_anomaly": "No"}
+{"prediction": "40.994274", "actual": "32.27942699999999", "is_anomaly": "No"}
+{"prediction": "38.100536", "actual": "48.200594", "is_anomaly": "No"}
+{"prediction": "37.05558", "actual": "68.2868", "is_anomaly": "No"}
+{"prediction": "37.102745", "actual": "22.647462", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "33.911106", "actual": "9.509591", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "36.289757", "actual": "15.728018", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "36.248894", "actual": "84.36589500000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "39.1112", "actual": "28.055155", "is_anomaly": "No"}
+{"prediction": "38.673836", "actual": "68.13322299999999", "is_anomaly": "No"}
+{"prediction": "39.590168", "actual": "53.56655000000001", "is_anomaly": "No"}
+{"prediction": "40.319607", "actual": "72.26717099999999", "is_anomaly": "No"}
+{"prediction": "39.21779", "actual": "37.030545", "is_anomaly": "No"}
+{"prediction": "39.768955", "actual": "23.281655", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "41.880013", "actual": "29.750674000000004", "is_anomaly": "No"}
+{"prediction": "39.20775", "actual": "48.824432", "is_anomaly": "No"}
+{"prediction": "35.542835", "actual": "77.126848", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "32.62133", "actual": "29.296322000000018", "is_anomaly": "No"}
+{"prediction": "36.630516", "actual": "29.821998000000008", "is_anomaly": "No"}
+{"prediction": "34.338963", "actual": "26.173066", "is_anomaly": "No"}
+{"prediction": "37.059242", "actual": "55.269656", "is_anomaly": "No"}
+{"prediction": "38.147568", "actual": "26.40312999999999", "is_anomaly": "No"}
+{"prediction": "41.138634", "actual": "40.57764400000001", "is_anomaly": "No"}
+{"prediction": "40.83327", "actual": "75.39519000000001", "is_anomaly": "No"}
+{"prediction": "39.27025", "actual": "46.198496000000006", "is_anomaly": "No"}
+{"prediction": "38.175243", "actual": "62.06895499999999", "is_anomaly": "No"}
+{"prediction": "38.599854", "actual": "58.046235", "is_anomaly": "No"}
+{"prediction": "41.08215", "actual": "26.981318999999992", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "39.036953", "actual": "79.95855900000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-43.78686", "actual": "42.88314600000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-30.140741", "actual": "43.756371", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-14.4558115", "actual": "77.841537", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-5.2257414", "actual": "57.53000599999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "3.486045", "actual": "80.701867", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "14.591627", "actual": "69.054394", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "20.69513", "actual": "47.22322799999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "27.301912", "actual": "58.308936", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "32.180264", "actual": "65.43857599999998", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "32.852085", "actual": "81.246917", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "38.23252", "actual": "36.793", "is_anomaly": "No"}
+{"prediction": "39.042343", "actual": "83.20302", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "39.59214", "actual": "34.586388000000014", "is_anomaly": "No"}
+{"prediction": "42.847572", "actual": "53.740328000000005", "is_anomaly": "No"}
+{"prediction": "43.58138", "actual": "14.199458", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "46.25178", "actual": "67.310318", "is_anomaly": "No"}
+{"prediction": "47.441383", "actual": "33.993585", "is_anomaly": "No"}
+{"prediction": "46.90001", "actual": "35.730921", "is_anomaly": "No"}
+{"prediction": "47.2934", "actual": "76.42814800000002", "is_anomaly": "No"}
+{"prediction": "48.0247", "actual": "57.60057799999999", "is_anomaly": "No"}
+{"prediction": "49.83977", "actual": "50.62889699999999", "is_anomaly": "No"}
+{"prediction": "47.737274", "actual": "88.85553000000003", "is_anomaly": "No"}
+{"prediction": "50.231926", "actual": "94.419052", "is_anomaly": "No"}
+{"prediction": "47.70575", "actual": "45.68163999999999", "is_anomaly": "No"}
+{"prediction": "47.472984", "actual": "76.558119", "is_anomaly": "No"}
+{"prediction": "42.76989", "actual": "110.84186400000002", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "43.72141", "actual": "42.272447", "is_anomaly": "No"}
+{"prediction": "40.374687", "actual": "88.95784", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "37.676365", "actual": "43.02425399999999", "is_anomaly": "No"}
+{"prediction": "39.451218", "actual": "86.59492800000002", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "39.076885", "actual": "66.930126", "is_anomaly": "No"}
+{"prediction": "38.666508", "actual": "45.100014", "is_anomaly": "No"}
+{"prediction": "42.284637", "actual": "49.15421199999999", "is_anomaly": "No"}
+{"prediction": "46.369286", "actual": "112.728203", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "45.77524", "actual": "36.73662899999999", "is_anomaly": "No"}
+{"prediction": "48.52094", "actual": "24.371146000000003", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "53.070908", "actual": "65.780014", "is_anomaly": "No"}
+{"prediction": "51.689613", "actual": "38.9113", "is_anomaly": "No"}
+{"prediction": "54.367325", "actual": "30.456551999999995", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "52.97969", "actual": "97.444515", "is_anomaly": "No"}
+{"prediction": "54.813343", "actual": "33.05619099999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "54.753216", "actual": "23.060692", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "53.021164", "actual": "41.67838100000001", "is_anomaly": "No"}
+{"prediction": "51.66659", "actual": "92.691596", "is_anomaly": "No"}
+{"prediction": "54.71993", "actual": "47.60640000000001", "is_anomaly": "No"}
+{"prediction": "51.353657", "actual": "27.015173000000004", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "47.638638", "actual": "70.27680000000001", "is_anomaly": "No"}
+{"prediction": "47.69842", "actual": "35.84205299999999", "is_anomaly": "No"}
+{"prediction": "44.756725", "actual": "59.268812", "is_anomaly": "No"}
+{"prediction": "41.231785", "actual": "67.20828200000001", "is_anomaly": "No"}
+{"prediction": "-31.153917", "actual": "64.70483200000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-16.01128", "actual": "38.36099899999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-5.025545", "actual": "29.02389699999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "4.3572254", "actual": "28.048395", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "16.393507", "actual": "57.59583799999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "21.836903", "actual": "47.567517", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "24.656921", "actual": "66.07636299999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "30.541628", "actual": "79.55395000000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "31.775906", "actual": "8.243727000000007", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "34.68625", "actual": "8.226374000000007", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "37.208763", "actual": "22.44945899999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "38.956024", "actual": "50.066511000000006", "is_anomaly": "No"}
+{"prediction": "38.344234", "actual": "53.141404", "is_anomaly": "No"}
+{"prediction": "37.16955", "actual": "18.17153799999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "35.458015", "actual": "46.695957", "is_anomaly": "No"}
+{"prediction": "35.727905", "actual": "50.254741", "is_anomaly": "No"}
+{"prediction": "34.687046", "actual": "1.3932989999999918", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "35.492443", "actual": "16.969310999999998", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "37.343292", "actual": "-0.0527399999999929", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "33.68075", "actual": "18.901443000000008", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "31.249262", "actual": "40.437000000000005", "is_anomaly": "No"}
+{"prediction": "29.586348", "actual": "24.376606999999996", "is_anomaly": "No"}
+{"prediction": "29.609238", "actual": "33.50711399999998", "is_anomaly": "No"}
+{"prediction": "29.282448", "actual": "31.900960000000005", "is_anomaly": "No"}
+{"prediction": "26.103941", "actual": "44.19885099999998", "is_anomaly": "No"}
+{"prediction": "26.501242", "actual": "49.792886", "is_anomaly": "No"}
+{"prediction": "27.12303", "actual": "61.114527", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "23.507614", "actual": "41.752808000000016", "is_anomaly": "No"}
+{"prediction": "22.344168", "actual": "-4.349058000000007", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "19.071087", "actual": "29.861547999999992", "is_anomaly": "No"}
+{"prediction": "17.703894", "actual": "-2.096967", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "16.732975", "actual": "-14.295507999999993", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "14.502688", "actual": "25.07680000000001", "is_anomaly": "No"}
+{"prediction": "14.412365", "actual": "23.540768", "is_anomaly": "No"}
+{"prediction": "14.720042", "actual": "32.87862299999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "16.837402", "actual": "-15.123545000000014", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "19.597712", "actual": "18.777323000000024", "is_anomaly": "No"}
+{"prediction": "23.652998", "actual": "26.002074", "is_anomaly": "No"}
+{"prediction": "25.527096", "actual": "-16.431546000000004", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "22.59538", "actual": "13.195065", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "23.671257", "actual": "23.538787", "is_anomaly": "No"}
+{"prediction": "19.709064", "actual": "8.251360000000005", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "14.482571", "actual": "20.891572000000004", "is_anomaly": "No"}
+{"prediction": "13.420019", "actual": "-12.372065000000012", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "11.360472", "actual": "15.584075", "is_anomaly": "No"}
+{"prediction": "10.765273", "actual": "5.8700040000000016", "is_anomaly": "No"}
+{"prediction": "5.3358107", "actual": "2.859553999999996", "is_anomaly": "No"}
+{"prediction": "5.406263", "actual": "36.72021800000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "6.1701236", "actual": "26.20181000000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "2.289346", "actual": "-21.655603000000013", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-27.425573", "actual": "-12.394017999999996", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-16.57428", "actual": "-25.093884", "is_anomaly": "No"}
+{"prediction": "-8.98299", "actual": "-47.53954199999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-2.4545367", "actual": "4.883669000000005", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-2.005822", "actual": "-30.681828000000003", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "1.2831069", "actual": "-24.38034400000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "2.4000633", "actual": "-22.83064999999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "2.6509826", "actual": "-3.719623999999996", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "6.7434297", "actual": "-26.253707000000013", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "9.303031", "actual": "-47.91525", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "5.654193", "actual": "9.167949000000007", "is_anomaly": "No"}
+{"prediction": "3.5056791", "actual": "15.17342", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-0.7230319", "actual": "-22.79001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-7.998189", "actual": "-0.1397229999999965", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-8.720978", "actual": "-2.5500509999999963", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-14.012174", "actual": "-9.719015999999996", "is_anomaly": "No"}
+{"prediction": "-18.030449", "actual": "-26.61945800000001", "is_anomaly": "No"}
+{"prediction": "-21.318068", "actual": "-39.463161", "is_anomaly": "No"}
+{"prediction": "-21.660706", "actual": "12.202625000000005", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-23.993937", "actual": "-40.678898", "is_anomaly": "No"}
+{"prediction": "-28.505966", "actual": "-8.586191999999997", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-25.613367", "actual": "-19.043854", "is_anomaly": "No"}
+{"prediction": "-21.531796", "actual": "-2.847966", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-21.779612", "actual": "-29.604854", "is_anomaly": "No"}
+{"prediction": "-19.173323", "actual": "-27.568765", "is_anomaly": "No"}
+{"prediction": "-16.87674", "actual": "-23.04798600000001", "is_anomaly": "No"}
+{"prediction": "-15.578556", "actual": "-41.46509300000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-16.708979", "actual": "-33.363797000000005", "is_anomaly": "No"}
+{"prediction": "-19.704664", "actual": "-60.078864", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-16.751503", "actual": "-43.996672", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-20.394844", "actual": "-6.587999999999994", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-20.265423", "actual": "-28.480208000000005", "is_anomaly": "No"}
+{"prediction": "-21.398483", "actual": "-8.425783999999993", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-20.50227", "actual": "-37.87701399999999", "is_anomaly": "No"}
+{"prediction": "-22.67036", "actual": "-54.503066", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-24.276999", "actual": "-13.936146999999984", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-25.271223", "actual": "-29.034279", "is_anomaly": "No"}
+{"prediction": "-28.387306", "actual": "-31.186050000000005", "is_anomaly": "No"}
+{"prediction": "-30.370726", "actual": "-33.682352", "is_anomaly": "No"}
+{"prediction": "-35.124336", "actual": "-27.84562600000001", "is_anomaly": "No"}
+{"prediction": "-38.056362", "actual": "-68.72631200000001", "is_anomaly": "No"}
+{"prediction": "-37.373272", "actual": "-34.25649500000001", "is_anomaly": "No"}
+{"prediction": "-38.186886", "actual": "-29.12415", "is_anomaly": "No"}
+{"prediction": "-36.154392", "actual": "-9.593122999999991", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-36.673843", "actual": "-23.765390999999997", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-38.559113", "actual": "-18.199572000000003", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-35.802444", "actual": "-38.037822000000006", "is_anomaly": "No"}
+{"prediction": "-34.753437", "actual": "-35.230391", "is_anomaly": "No"}
+{"prediction": "-34.287117", "actual": "-57.75449100000001", "is_anomaly": "No"}
+{"prediction": "-34.255943", "actual": "-35.825101000000004", "is_anomaly": "No"}
+{"prediction": "-49.167496", "actual": "-15.540595999999994", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-46.935085", "actual": "-18.623169999999995", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-41.64012", "actual": "-69.88931", "is_anomaly": "No"}
+{"prediction": "-47.269077", "actual": "-10.876878000000003", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-32.95334", "actual": "-20.96335", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "26.386585", "actual": "-18.05379599999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "44.88047", "actual": "-5.178468000000009", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "39.53765", "actual": "-85.242918", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "18.67316", "actual": "-62.35803900000002", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-7.902627", "actual": "-31.791015", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-31.718302", "actual": "-33.008168", "is_anomaly": "No"}
+{"prediction": "-37.96582", "actual": "-52.538381", "is_anomaly": "No"}
+{"prediction": "-37.36118", "actual": "-72.79290999999999", "is_anomaly": "No"}
+{"prediction": "-44.043262", "actual": "-26.407805", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-43.379143", "actual": "-59.01982800000001", "is_anomaly": "No"}
+{"prediction": "-39.47241", "actual": "-30.880788999999996", "is_anomaly": "No"}
+{"prediction": "-34.976135", "actual": "-48.206100000000006", "is_anomaly": "No"}
+{"prediction": "-27.23553", "actual": "-56.35821", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-35.718052", "actual": "-34.879978", "is_anomaly": "No"}
+{"prediction": "-44.855656", "actual": "-38.753744", "is_anomaly": "No"}
+{"prediction": "-46.85114", "actual": "-31.73517400000001", "is_anomaly": "No"}
+{"prediction": "-45.30677", "actual": "-40.966515", "is_anomaly": "No"}
+{"prediction": "-45.755836", "actual": "-17.707206999999997", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-49.87976", "actual": "-72.35810400000001", "is_anomaly": "No"}
+{"prediction": "-49.278168", "actual": "-37.170591", "is_anomaly": "No"}
+{"prediction": "-49.640175", "actual": "-29.017328000000006", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-47.5421", "actual": "-39.491508", "is_anomaly": "No"}
+{"prediction": "-47.363186", "actual": "-45.297632", "is_anomaly": "No"}
+{"prediction": "-48.61131", "actual": "-66.1471", "is_anomaly": "No"}
+{"prediction": "-47.12036", "actual": "-69.17096799999999", "is_anomaly": "No"}
+{"prediction": "-44.618668", "actual": "-78.710528", "is_anomaly": "No"}
+{"prediction": "-40.749107", "actual": "-25.522338999999988", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-38.66497", "actual": "-68.396004", "is_anomaly": "No"}
+{"prediction": "-32.62549", "actual": "-82.94784999999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-38.079994", "actual": "-61.53621", "is_anomaly": "No"}
+{"prediction": "-39.98609", "actual": "-12.597193000000011", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-38.032314", "actual": "-22.247153000000004", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-35.840805", "actual": "-39.85471800000001", "is_anomaly": "No"}
+{"prediction": "-35.54624", "actual": "-51.066025", "is_anomaly": "No"}
+{"prediction": "-39.971447", "actual": "-59.52395700000001", "is_anomaly": "No"}
+{"prediction": "-45.53368", "actual": "-83.78225", "is_anomaly": "No"}
+{"prediction": "-51.2963", "actual": "-35.828659", "is_anomaly": "No"}
+{"prediction": "-50.382027", "actual": "-1.5530670000000055", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-50.626675", "actual": "-27.26893299999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-55.064842", "actual": "-41.77506", "is_anomaly": "No"}
+{"prediction": "-57.226757", "actual": "-68.063675", "is_anomaly": "No"}
+{"prediction": "-52.870037", "actual": "-100.17151700000002", "is_anomaly": "No"}
+{"prediction": "-43.446594", "actual": "-46.647529000000006", "is_anomaly": "No"}
+{"prediction": "-36.600357", "actual": "-35.549575999999995", "is_anomaly": "No"}
+{"prediction": "-35.325092", "actual": "-59.73872999999999", "is_anomaly": "No"}
+{"prediction": "-21.23691", "actual": "-63.98710400000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-3.6155536", "actual": "-60.474018000000015", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "7.7338014", "actual": "-55.486900000000006", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "24.103497", "actual": "-39.254976", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "26.40606", "actual": "-40.572222", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "20.91011", "actual": "-63.728096", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "16.521221", "actual": "-47.448615", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "7.380421", "actual": "-36.32547100000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "0.2709843", "actual": "-69.05771499999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-8.5917845", "actual": "-28.068532", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-21.847502", "actual": "-87.49347799999998", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-32.884823", "actual": "-67.823084", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-40.689186", "actual": "-42.572942", "is_anomaly": "No"}
+{"prediction": "-45.95781", "actual": "-42.295931", "is_anomaly": "No"}
+{"prediction": "-48.125977", "actual": "-92.56309999999996", "is_anomaly": "No"}
+{"prediction": "-48.486282", "actual": "-71.343747", "is_anomaly": "No"}
+{"prediction": "-49.148544", "actual": "-50.44560400000002", "is_anomaly": "No"}
+{"prediction": "-47.95556", "actual": "-24.447639999999996", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-45.26957", "actual": "-34.632859", "is_anomaly": "No"}
+{"prediction": "-45.41356", "actual": "-29.408548999999997", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-42.69657", "actual": "-89.547312", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-45.658234", "actual": "-71.439716", "is_anomaly": "No"}
+{"prediction": "-47.256977", "actual": "-36.22664699999999", "is_anomaly": "No"}
+{"prediction": "-46.737514", "actual": "-69.75137600000001", "is_anomaly": "No"}
+{"prediction": "-46.011055", "actual": "-82.91931200000002", "is_anomaly": "No"}
+{"prediction": "-49.621964", "actual": "-23.369111999999998", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-51.533752", "actual": "-59.31119999999999", "is_anomaly": "No"}
+{"prediction": "-51.824398", "actual": "-42.244168", "is_anomaly": "No"}
+{"prediction": "-49.53011", "actual": "-0.2114720000000005", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-47.37801", "actual": "-33.89710400000001", "is_anomaly": "No"}
+{"prediction": "-44.77481", "actual": "-19.614843000000008", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-48.119152", "actual": "-26.76818399999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-49.956924", "actual": "-9.561029000000005", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-48.026134", "actual": "-76.75036800000001", "is_anomaly": "No"}
+{"prediction": "-48.505577", "actual": "-50.012778", "is_anomaly": "No"}
+{"prediction": "-50.524677", "actual": "-114.879736", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-48.776405", "actual": "-67.48825400000001", "is_anomaly": "No"}
+{"prediction": "-49.456337", "actual": "-51.296537", "is_anomaly": "No"}
+{"prediction": "-48.409027", "actual": "-5.434874999999991", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-43.898544", "actual": "-20.14935", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-41.338158", "actual": "-12.296295999999984", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-37.408363", "actual": "-96.84954000000002", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-34.62149", "actual": "-83.64838899999998", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-29.659828", "actual": "-100.175547", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-32.756767", "actual": "-74.365735", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-33.862877", "actual": "-103.58242900000002", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-42.270477", "actual": "-61.79300300000001", "is_anomaly": "No"}
+{"prediction": "-45.009686", "actual": "-109.885009", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-46.397327", "actual": "-90.93038", "is_anomaly": "No"}
+{"prediction": "-43.89878", "actual": "-103.78883600000002", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-44.507847", "actual": "-23.6675", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-28.739433", "actual": "-69.843894", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-29.45779", "actual": "-112.01945999999998", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-34.16197", "actual": "-58.17450099999999", "is_anomaly": "No"}
+{"prediction": "-40.02593", "actual": "-89.27766", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-44.347233", "actual": "-126.198422", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-50.894096", "actual": "-50.55029300000001", "is_anomaly": "No"}
+{"prediction": "-54.11502", "actual": "-23.073682000000005", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-58.554565", "actual": "-70.30390299999999", "is_anomaly": "No"}
+{"prediction": "-61.209255", "actual": "-54.50274000000002", "is_anomaly": "No"}
+{"prediction": "-62.592674", "actual": "-30.909212", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-62.975437", "actual": "-51.468986000000015", "is_anomaly": "No"}
+{"prediction": "-62.90318", "actual": "-140.29632500000002", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-63.461082", "actual": "-90.61424900000002", "is_anomaly": "No"}
+{"prediction": "-63.711056", "actual": "-50.158908", "is_anomaly": "No"}
+{"prediction": "-63.512897", "actual": "-101.51682200000002", "is_anomaly": "No"}
+{"prediction": "-64.26162", "actual": "-39.48950299999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-64.350914", "actual": "-85.82220999999997", "is_anomaly": "No"}
+{"prediction": "-61.883617", "actual": "-107.289708", "is_anomaly": "No"}
+{"prediction": "-59.992905", "actual": "-84.858741", "is_anomaly": "No"}
+{"prediction": "-58.193424", "actual": "-102.599744", "is_anomaly": "No"}
+{"prediction": "-55.067337", "actual": "-62.75855999999999", "is_anomaly": "No"}
+{"prediction": "-52.355453", "actual": "-89.252409", "is_anomaly": "No"}
+{"prediction": "-56.11425", "actual": "-26.518100999999987", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-57.459465", "actual": "-72.174954", "is_anomaly": "No"}
+{"prediction": "-56.03857", "actual": "-56.114794", "is_anomaly": "No"}
+{"prediction": "-57.450005", "actual": "-45.478501", "is_anomaly": "No"}
+{"prediction": "-57.26292", "actual": "-121.133675", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-58.41574", "actual": "-34.081104", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-60.54309", "actual": "-103.836666", "is_anomaly": "No"}
+{"prediction": "-61.970753", "actual": "-65.094132", "is_anomaly": "No"}
+{"prediction": "-62.85329", "actual": "-82.945484", "is_anomaly": "No"}
+{"prediction": "-63.025314", "actual": "-147.72324599999996", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-62.983253", "actual": "-102.052948", "is_anomaly": "No"}
+{"prediction": "-61.68439", "actual": "-35.79829599999999", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-60.687176", "actual": "-92.95778900000002", "is_anomaly": "No"}
+{"prediction": "-59.252937", "actual": "-83.100313", "is_anomaly": "No"}
+{"prediction": "-56.641808", "actual": "-91.029226", "is_anomaly": "No"}
+{"prediction": "-58.3305", "actual": "-106.56083600000002", "is_anomaly": "No"}
+{"prediction": "-56.14719", "actual": "-22.909347999999994", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-56.36239", "actual": "-47.506736", "is_anomaly": "No"}
+{"prediction": "-56.079082", "actual": "-101.254368", "is_anomaly": "No"}
+{"prediction": "-56.61221", "actual": "-85.863864", "is_anomaly": "No"}
+{"prediction": "-60.641815", "actual": "-22.35573100000001", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-62.824947", "actual": "-85.401865", "is_anomaly": "No"}
+{"prediction": "-62.896896", "actual": "-47.245078", "is_anomaly": "No"}
+{"prediction": "-63.063065", "actual": "-65.70833", "is_anomaly": "No"}
+{"prediction": "-63.728924", "actual": "-91.48208600000002", "is_anomaly": "No"}
+{"prediction": "-64.33488", "actual": "-38.76535", "is_anomaly": "WARNING AN ANOMALY DETECTED AT BUS 5.0"}
+{"prediction": "-64.853745", "actual": "-47.767406", "is_anomaly": "No"}
