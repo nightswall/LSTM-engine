@@ -41,6 +41,6 @@ docker build -t gpu-lstm -f Dockerfile.gpu .
 docker run --gpus all -it --rm -p 80:8000 --security-opt seccomp=unconfined gpu-lstm:latest
 ```
 
-The above command will run the Docker container and map the container's port 80 to your host machine's port 8000. You can then access the application by navigating to http://localhost:8000 in your web browser.
+The above command will run the Docker container and map the container's port 8000 to your host machine's port 80. You can then access the application by navigating to http://localhost:80 in your web browser.
 
 Note: If you encounter any issues with GPU access or permissions, make sure to check that your NVIDIA drivers, Docker version, and NVIDIA Container Toolkit are up-to-date and properly installed.
