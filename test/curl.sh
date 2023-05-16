@@ -1,8 +1,8 @@
 FILE="fivedayoutputtest.csv"
 
 # set the URL of the web server
-URL="http://172.18.0.4:8000/api/predict/temperature" #for docker
-#URL="http://localhost/api/predict/temperature" #for local
+#URL="http://172.18.0.4:8000/api/predict/temperature" #for docker
+URL="http://localhost:8000/api/predict/current" #for local
 
 # read the CSV file line by line
 while read -r line; do

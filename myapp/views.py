@@ -72,37 +72,25 @@ def evaluate(model, test_x,label_scaler):
 	#print(outputs[i][0],targets[i][0])
 	#print("MSE: {}%".format(MSE*100))
 	return outputs		
-lookback = 12
-device =torch.device('cuda')
-temperature_model = LSTMNet(9, 256, 1,2)
-temperature_train_loader , sc, temperature_label_scaler , s_data= getTrainLoaderFirstTime(datasetFileName,1)
-model_exists = os.path.isfile('myapp/lstm_model_temperature_9.pt')
-if(not(model_exists)):
-	temperature_model = train(temperature_train_loader , 0.001,  model_type="LSTM")
-	torch.save(temperature_model.state_dict(),"myapp/lstm_model_temperature_9.pt")
-else:
-	temperature_model.load_state_dict(torch.load('myapp/lstm_model_temperature_9.pt',map_location=device))
-#inputs = np.zeros((1,lookback,10))
-'''inputs = np.zeros((1,lookback,10))
-temperature_model.load_state_dict(torch.load('myapp/lstm_model_temperature_10.pt',map_location=device))
-s_data=pd.read_csv(datasetFileName,parse_dates=[0])
-s_data['hour'] = s_data.apply(lambda x: x['DateTime'].hour,axis=1)
-s_data['dayofweek'] = s_data.apply(lambda x: x['DateTime'].dayofweek,axis=1)
-s_data['month'] = s_data.apply(lambda x: x['DateTime'].month,axis=1)
-s_data['dayofyear'] = s_data.apply(lambda x: x['DateTime'].dayofyear,axis=1)
-s_data = s_data.sort_values('DateTime').drop('DateTime',axis=1)
-#s_data = s_data.drop('Light',axis=1)
-#s_data = s_data.drop('Humidity',axis=1)
-#s_data = s_data.drop('CO2',axis=1)
-#s_data = s_data.drop('HumidityRatio',axis=1)
-sc = MinMaxScaler()
-sc.fit(s_data.values) #scaler for temperature
-label_scaler = MinMaxScaler()
-label_scaler.fit(s_data.iloc[:,0].values.reshape(-1,1))'''
+attributeDict = {
+  "Power": 1,
+  "Temperature":2,
+  "Voltage": 3,
+  "Current": 4
+}
+
 @csrf_exempt
-def predict_temperature(request):
-	global temperature_model
-	global temperature_label_scaler
+def predict(request,attribute):
+	lookback = 12
+	device =torch.device('cuda')
+	temperature_model = LSTMNet(9, 256, 1,2)
+	temperature_train_loader , sc, temperature_label_scaler , s_data= getTrainLoaderFirstTime(datasetFileName,attributeDict[attribute])
+	model_exists = os.path.isfile('myapp/lstm_model_{0}_9.pt'.format(attribute))
+	if(not(model_exists)):
+		temperature_model = train(temperature_train_loader , 0.001,  model_type="LSTM")
+		torch.save(temperature_model.state_dict(),'myapp/lstm_model_{0}_9.pt'.format(attribute))
+	else:
+		temperature_model.load_state_dict(torch.load('myapp/lstm_model_{0}_9.pt'.format(attribute),map_location=device))
 	temp_data = request.POST.get("data")
 	#print(temp_data)
 	csv_data = StringIO("{}".format(temp_data))
@@ -112,23 +100,23 @@ def predict_temperature(request):
 	df = pd.read_csv(csv_data,header=None,names=columns,parse_dates=[0])
 	#Apppend to csv file.
 	# Check if the file exists
-	file_exists = os.path.isfile('tempNewData.csv')
+	file_exists = os.path.isfile('tempNewData{0}.csv'.format(attribute))
 	# Append the DataFrame to the CSV file
-	with open('tempNewData.csv', 'a') as f:
+	with open('tempNewData{0}.csv'.format(attribute), 'a') as f:
 		df.to_csv(f, header=not file_exists, index=False)
 	# Check csv file size if greater than 1000 call getTrainLoadeLater()
-	csvFileName = "tempNewData.csv"
+	csvFileName = 'tempNewData{0}.csv'.format(attribute)
 	line_count = 0
 	with open(csvFileName, 'r') as csvfile:
 		csvreader = csv.reader(csvfile)
 		for row in csvreader:
 			line_count += 1
-	if line_count >= 51:
-		train_loader , scaler_later , temperature_label_scaler, data = getTrainLoaderLater(csvFileName,datasetFileName,1)
+	if line_count >= 251:
+		train_loader , scaler_later , temperature_label_scaler, data = getTrainLoaderLater(csvFileName,datasetFileName,attributeDict[attribute])
 		# delete new_temp
 		## Will call train 
 		temperature_model = train(train_loader , 0.001,  model_type="LSTM")
-		torch.save(temperature_model.state_dict(),"myapp/lstm_model_temperature_9.pt")
+		torch.save(temperature_model.state_dict(),'myapp/lstm_model_{0}_9.pt'.format(attribute))
 		os.remove(csvFileName)
 	#df = df.sort_values('Humidity').drop('Humidity',axis=1)
 	# Processing the time data into suitable input formats
@@ -145,9 +133,9 @@ def predict_temperature(request):
 	#df = df.drop('CO2',axis=1)
 	#df = df.drop('HumidityRatio',axis=1)
 	data = sc.transform(df.values)
-	if 'temperature_data.npz' in os.listdir('.'):
+	if '{0}_data.npz'.format(attribute) in os.listdir('.'):
 	# Load the existing file
-		with np.load('temperature_data.npz',allow_pickle=True) as f:
+		with np.load('{0}_data.npz'.format(attribute),allow_pickle=True) as f:
 	#		# Get the existing data
 			existing_data = f['data']
 
@@ -156,8 +144,8 @@ def predict_temperature(request):
 			data = np.concatenate((existing_data, data))
 			#print(data)
 			# Save the updated data to the file
-	np.savez('temperature_data.npz', data=data)
-	with np.load('temperature_data.npz',allow_pickle=True) as data:
+	np.savez('{0}_data.npz'.format(attribute), data=data)
+	with np.load('{0}_data.npz'.format(attribute),allow_pickle=True) as data:
 		# Get the data from the 'data' key
 		all_data_temperature = data['data']
 		#print(all_data_temperature)
@@ -175,11 +163,11 @@ def predict_temperature(request):
 		#print(prediction[0][0].value())
 		#print(json_prediction)
 		#print((df['Temperature'].values)[0])
-		proportion = abs(float(json_prediction)-float((df['Power'].values)[0])) / abs(float((df['Power'].values)[0]))
+		proportion = abs(float(json_prediction)-float((df[attribute].values)[0])) / abs(float((df[attribute].values)[0]))
 		#if(proportion)
 		if proportion > 0.3 and line_count > 5:
 			anomaly="Yes"
-			response = HttpResponse(json.dumps({"prediction":json_prediction,"actual":str(float((df['Power'].values)[0])),"is_anomaly":str("WARNING AN ANOMALY DETECTED AT BUS ")+str(float((df['Bus'].values)[0]))}) + "\n")
+			response = HttpResponse(json.dumps({"prediction":json_prediction,"actual":str(float((df[attribute].values)[0])),"is_anomaly":str("WARNING AN ANOMALY DETECTED AT BUS ")+str(float((df['Bus'].values)[0]))}) + "\n")
 		else:
 			anomaly="No"
 
@@ -192,23 +180,28 @@ def predict_temperature(request):
 			#merged_response = {}
 			#merged_response.update(response1)
 			#merged_response.update(response2)
-			response = HttpResponse(json.dumps({"prediction":json_prediction,"actual":str(float((df['Power'].values)[0])),"is_anomaly":str(anomaly)}) + "\n")
+			response = HttpResponse(json.dumps({"prediction":json_prediction,"actual":str(float((df[attribute].values)[0])),"is_anomaly":str(anomaly)}) + "\n")
 		return response
 	else:
 		return JsonResponse({"available_after":(lookback-len(all_data_temperature))})#(lookback-len(all_data))
+
+@csrf_exempt
+def predict_temperature(request):
+	response = predict(request, 'Temperature')
+	return response
 # Create your views here.
 @csrf_exempt
-def predict_humidity(request):
-	return 0
+def predict_power(request):
+	response = predict(request, 'Power')
+	return response
 @csrf_exempt
-def predict_light(request):
-	return 0
+def predict_voltage(request):
+	response = predict(request, 'Voltage')
+	return response
 @csrf_exempt
-def predict_occupancy(request):
-	return 0
-@csrf_exempt
-def predict_co2(request):
-	return 0
+def predict_current(request):
+	response = predict(request, 'Current')
+	return response
 """ 
 
 all_data_humidity=list()
