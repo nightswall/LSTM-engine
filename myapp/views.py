@@ -239,6 +239,35 @@ class Model():
     saver.restore(sess, session_path)
     return model
 
+class DataLoader():
+    def initalize_training_data(__self__, dataset_path):
+        training_set = pd.read_csv(dataset_path)
+
+        class_names = training_set.target.unique()
+        training_set = training_set.astype("category")
+        category_columns = training_set.select_dtypes(["category"]).columns
+
+        training_set[category_columns] = training_set[category_columns].apply(lambda x : x.cat.codes)
+
+        x_columns = training_set.columns.drop("target")
+        x_training = training_set[x_columns].values
+        y_training = training_set["target"]
+
+        return x_training, y_training
+
+    def initialize_test_data(__self__, testing_set):
+
+        class_names = testing_set.target.unique()
+        testing_set = testing_set.astype("category")
+        category_columns = testing_set.select_dtypes(["category"]).columns
+
+        testing_set[category_columns] = testing_set[category_columns].apply(lambda x : x.cat.codes)
+
+        x_columns = testing_set.columns.drop("target")
+        x_testing = testing_set[x_columns].values
+        y_testing = testing_set["target"]
+
+        return x_testing, y_testing
 
 flow_types = {0: "BruteForce", 1: "dos", 3: "legitimate", 4: "malformed", 2: "SlowITe", 5: "Flooding"}
 model_checkpoint = "/home/gorkem/lstm-engine/myapp/cp70_reduced.ckpt"
@@ -274,8 +303,9 @@ def network_prediction(request):
 	data = request.POST.get("data")
 	csv_data = StringIO("{}".format(data))
 	df = pd.read_csv(csv_data)
-	del df[df.columns[-1]]
-	return HttpResponse(json.dumps({"prediction": get_prediction(df)}))
+	data_loader = DataLoader()
+	x, _ = data_loader.initialize_test_data(df)
+	return HttpResponse(json.dumps({"prediction": get_prediction(x)}))
 
 @csrf_exempt
 def predict_temperature(request):
