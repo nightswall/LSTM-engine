@@ -241,8 +241,8 @@ class Model():
 
 
 flow_types = {0: "BruteForce", 1: "dos", 3: "legitimate", 4: "malformed", 2: "SlowITe", 5: "Flooding"}
-model_checkpoint = "checkpoints/ckpt70_reduced/ckpt70_reduced.ckpt"
-session_checkpoint = "checkpoints/ckpt70_reduced/session.ckpt"
+model_checkpoint = "/home/gorkem/lstm-engine/myapp/cp70_reduced.ckpt"
+session_checkpoint = "/home/gorkem/lstm-engine/myapp/session.ckpt"
 
 
 def get_prediction(incoming_message = None):
@@ -254,7 +254,7 @@ def get_prediction(incoming_message = None):
 	print(incoming_message)
 
 	if incoming_message is not None: # Checking if a valid request is made
-		prediction = model.predict(incoming_message) # Prediction from the engine
+		prediction = detector.predict(incoming_message) # Prediction from the engine
 		prediction = np.argmax(prediction, axis = 1)
 		result = []
 
@@ -274,6 +274,7 @@ def network_prediction(request):
 	data = request.POST.get("data")
 	csv_data = StringIO("{}".format(data))
 	df = pd.read_csv(csv_data)
+	del df[df.columns[-1]]
 	return HttpResponse(json.dumps({"prediction": get_prediction(df)}))
 
 @csrf_exempt
