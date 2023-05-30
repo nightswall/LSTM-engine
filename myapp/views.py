@@ -256,20 +256,23 @@ class DataLoader():
         return x_training, y_training
 
     def initialize_test_data(__self__, testing_set):
-
+        
         class_names = testing_set.target.unique()
         testing_set = testing_set.astype("category")
+        #print(class_names)
         category_columns = testing_set.select_dtypes(["category"]).columns
-
-        testing_set[category_columns] = testing_set[category_columns].apply(lambda x : x.cat.codes)
-
+        classes = {"bruteforce": 0, "dos": 1, "legitimate": 2, "malformed": 3, "slowite": 4, "flooding": 5}
+        #print(classes[class_names])
+        testing_set[category_columns] = testing_set[category_columns].apply(lambda x : classes[class_names[0]])
+        #print(testing_set)
         x_columns = testing_set.columns.drop("target")
+        #print(testing_set)
         x_testing = testing_set[x_columns].values
         y_testing = testing_set["target"]
 
         return x_testing, y_testing
 
-flow_types = {0: "BruteForce", 1: "dos", 4: "legitimate", 3: "malformed", 2: "SlowITe", 5: "Flooding"}
+flow_types = {0: "legitimate", 1: "dos", 2: "bruteforce", 3: "malformed", 4: "slowite", 5: "flooding"}
 model_checkpoint = "/home/gorkem/lstm-engine/myapp/cp70_reduced.ckpt"
 session_checkpoint = "/home/gorkem/lstm-engine/myapp/session.ckpt"
 
@@ -279,7 +282,7 @@ def get_prediction(incoming_message = None):
 	model = Model()
 	detector, _ = model.create_model(33, model_checkpoint) # Creating a new model for reference
 	detector = model.load_model(detector, model_checkpoint, session_checkpoint) # Loading model checkpoint and session
-
+	detector.compile(loss = 'sparse_categorical_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
 	#print(incoming_message)
 
 	if incoming_message is not None: # Checking if a valid request is made
@@ -309,6 +312,7 @@ def network_prediction(request):
 	#print(csv_data)
 	data_loader = DataLoader()
 	x, _ = data_loader.initialize_test_data(df)
+	#print(x)
 	return HttpResponse(json.dumps({"prediction": get_prediction(x)}))
 
 @csrf_exempt
