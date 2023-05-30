@@ -192,7 +192,7 @@ def network_prediction(request):
 	data = request.POST.get("data")
 	csv_data = StringIO("{}".format(data))
 	df = pd.read_csv(csv_data)
-	return get_prediction(df)
+	return HttpResponse(json.dumps({"prediction": get_prediction(df)}))
 
 @csrf_exempt
 def predict_temperature(request):
