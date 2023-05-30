@@ -247,8 +247,9 @@ session_checkpoint = "checkpoints/ckpt70_reduced/session.ckpt"
 
 def get_prediction(incoming_message = None):
 	global flow_types, model_checkpoint, session_checkpoint
-	model, _ = Model().create_model(33, model_checkpoint) # Creating a new model for reference
-	model = model.load_model(model, model_checkpoint, session_checkpoint) # Loading model checkpoint and session
+	model = Model()
+	detector, _ = model.create_model(33, model_checkpoint) # Creating a new model for reference
+	detector = model.load_model(detector, model_checkpoint, session_checkpoint) # Loading model checkpoint and session
 
 	print(incoming_message)
 
