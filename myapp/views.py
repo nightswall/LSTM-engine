@@ -19,6 +19,8 @@ from sklearn.preprocessing import MinMaxScaler
 from torch.utils.data import TensorDataset, DataLoader
 from django.views.decorators.csrf import csrf_exempt
 
+from predict_single import get_prediction
+
 flag = False
 datasetFileName = "main.csv"
 
@@ -186,6 +188,13 @@ def predict(request,attribute):
 		return JsonResponse({"available_after":(lookback-len(all_data_temperature))})#(lookback-len(all_data))
 
 @csrf_exempt
+def network_prediction(request):
+	data = request.POST.get("data")
+	csv_data = StringIO("{}".format(data))
+	df = pd.read_csv(csv_data)
+	return get_prediction(df)
+
+@csrf_exempt
 def predict_temperature(request):
 	response = predict(request, 'Temperature')
 	return response
@@ -202,6 +211,10 @@ def predict_voltage(request):
 def predict_current(request):
 	response = predict(request, 'Current')
 	return response
+@csrf_exempt
+def predict_network(request):
+	return network_prediction(request)
+
 """ 
 
 all_data_humidity=list()
