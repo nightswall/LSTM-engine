@@ -19,7 +19,7 @@ from sklearn.preprocessing import MinMaxScaler
 from torch.utils.data import TensorDataset, DataLoader
 from django.views.decorators.csrf import csrf_exempt
 
-from predict_single import get_prediction
+# from predict_single import get_prediction
 
 flag = False
 datasetFileName = "main.csv"
@@ -186,6 +186,34 @@ def predict(request,attribute):
 		return response
 	else:
 		return JsonResponse({"available_after":(lookback-len(all_data_temperature))})#(lookback-len(all_data))
+
+flow_types = {0: "BruteForce", 1: "dos", 3: "legitimate", 4: "malformed", 2: "SlowITe", 5: "Flooding"}
+model_checkpoint = "checkpoints/ckpt70_reduced/ckpt70_reduced.ckpt"
+session_checkpoint = "checkpoints/ckpt70_reduced/session.ckpt"
+
+
+def get_prediction(incoming_message = None):
+	global flow_types, model_checkpoint, session_checkpoint
+	model, _ = Model().create_model(33, model_checkpoint) # Creating a new model for reference
+	model = model.load_model(model, model_checkpoint, session_checkpoint) # Loading model checkpoint and session
+
+	print(incoming_message)
+
+	if incoming_message is not None: # Checking if a valid request is made
+		prediction = model.predict(incoming_message) # Prediction from the engine
+		prediction = np.argmax(prediction, axis = 1)
+		result = []
+
+		for p in prediction:
+			f = dict()
+			if flow_types[p] == "legitimate":
+				f = {"type": "LEGITIMATE", "prediction": flow_types[p]}
+			else:
+				f = {"type": "MALICIOUS", "prediction": flow_types[p]} 
+			result.append(f)
+
+		decisions = {"type": "RESPONSE", "predictions": result} # Decision
+		return response
 
 @csrf_exempt
 def network_prediction(request):
