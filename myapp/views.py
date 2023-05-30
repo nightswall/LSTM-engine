@@ -302,13 +302,15 @@ def get_prediction(incoming_message = None):
 def network_prediction(request):
 	data = request.POST.get("data")
 	csv_data = StringIO("{}".format(data))
-	df = pd.read_csv(csv_data)
+	columns = ["tcp.flags", "tcp.time_delta", "tcp.len", "mqtt.conack.flags", "mqtt.conack.flags.reversed", "mqtt.conack.flags.sp", "mqtt.conack.val", "mqtt.conflag.cleansess", "mqtt.conflag.passwd", "mqtt.conflag.qos", "mqtt.conflag.reversed", "mqtt.conflag.retain", "mqtt.conflag.uname", "mqtt.conflag.willflag", "mqtt.conflags", "mqtt.dupflag", "mqtt.hdrflags", "mqtt.kalive", "mqtt.len", "mqtt.msg", "mqtt.msgid", "mqtt.msgtype", "mqtt.proto_len", "mqtt.protoname", "mqtt.qos", "mqtt.retain", "mqtt.sub.qos", "mqtt.suback.qos", "mqtt.ver", "mqtt.willmsg", "mqtt.willmsg_len", "mqtt.willtopic", "mqtt.willtopic_len", "target"]
+
+	df = pd.read_csv(csv_data, header = None, names = columns)
 	#print(data.split(","))
 	#del csv_data[-1]
 	#print(df)
 	#print(csv_data)
-	#data_loader = DataLoader()
-	#x, _ = data_loader.initialize_test_data(df)
+	data_loader = DataLoader()
+	x, _ = data_loader.initialize_test_data(df)
 	return HttpResponse(json.dumps({"prediction": get_prediction(csv_data)}))
 
 @csrf_exempt
