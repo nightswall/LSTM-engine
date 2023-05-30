@@ -269,7 +269,7 @@ class DataLoader():
 
         return x_testing, y_testing
 
-flow_types = {0: "BruteForce", 1: "dos", 3: "legitimate", 4: "malformed", 2: "SlowITe", 5: "Flooding"}
+flow_types = {0: "BruteForce", 1: "dos", 4: "legitimate", 3: "malformed", 2: "SlowITe", 5: "Flooding"}
 model_checkpoint = "/home/gorkem/lstm-engine/myapp/cp70_reduced.ckpt"
 session_checkpoint = "/home/gorkem/lstm-engine/myapp/session.ckpt"
 
@@ -280,23 +280,21 @@ def get_prediction(incoming_message = None):
 	detector, _ = model.create_model(33, model_checkpoint) # Creating a new model for reference
 	detector = model.load_model(detector, model_checkpoint, session_checkpoint) # Loading model checkpoint and session
 
-	print(incoming_message)
+	#print(incoming_message)
 
 	if incoming_message is not None: # Checking if a valid request is made
 		prediction = detector.predict(incoming_message) # Prediction from the engine
 		prediction = np.argmax(prediction, axis = 1)
-		result = []
+		
+		decisions = dict()
 
-		for p in prediction:
-			f = dict()
-			if flow_types[p] == "legitimate":
-				f = {"type": "LEGITIMATE", "prediction": flow_types[p]}
-			else:
-				f = {"type": "MALICIOUS", "prediction": flow_types[p]} 
-			result.append(f)
+		if flow_types[prediction[0]] != "legitimate":
+			decisions = {"type": "MALICIOUS", "predictions": flow_types[prediction[0]]}
+		else:
+			decisions = {"type": "LEGITIMATE", "predictions": flow_types[prediction[0]]}
 
-		decisions = {"type": "RESPONSE", "predictions": result} # Decision
-		return response
+		#decisions = {"type": "RESPONSE", "predictions": result} # Decision
+		return decisions
 
 @csrf_exempt
 def network_prediction(request):
@@ -311,7 +309,7 @@ def network_prediction(request):
 	#print(csv_data)
 	data_loader = DataLoader()
 	x, _ = data_loader.initialize_test_data(df)
-	return HttpResponse(json.dumps({"prediction": get_prediction(csv_data)}))
+	return HttpResponse(json.dumps({"prediction": get_prediction(x)}))
 
 @csrf_exempt
 def predict_temperature(request):

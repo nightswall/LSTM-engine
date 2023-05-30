@@ -1,4 +1,4 @@
-FILE="test30_reduced.csv"
+FILE="test30.csv"
 
 # set the URL of the web server
 #URL="http://172.18.0.4:8000/api/predict/temperature" #for docker
