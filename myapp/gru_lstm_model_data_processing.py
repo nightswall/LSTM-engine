@@ -83,11 +83,11 @@ def getTrainLoaderLater(filename, datasetFileName, attribute_number):
     source_df = pd.read_csv(datasetFileName,parse_dates=[0])
 
     #source_df
-    source_df = source_df.drop(source_df.index[:250])
+    source_df = source_df.drop(source_df.index[:50])
     #print("\nDataFrame after dropping first 100 records:\n", source_df.head())
 
     # add new 100 records to end from new DataFrame
-    source_df = pd.concat([source_df, new_temp_df.head(250)]) #.head(100)?
+    source_df = pd.concat([source_df, new_temp_df.head(50)]) #.head(100)?
     #print("\nDataFrame after adding new 100 records:\n", source_df.tail())
 
     #Overwrite into csv file
