@@ -1,0 +1,117 @@
+rm: cannot remove 'h_tensor.pt': No such file or directory
+rm: cannot remove 'myapp/lstm_model_Temperature_9.pt': No such file or directory
+rm: cannot remove 'tempNewDataTemperature.csv': No such file or directory
+rm: cannot remove 'Temperature_data.npz': No such file or directory
+rm: cannot remove 'myapp/lstm_model_Voltage_9.pt': No such file or directory
+rm: cannot remove 'tempNewDataVoltage.csv': No such file or directory
+rm: cannot remove 'Voltage_data.npz': No such file or directory
+rm: cannot remove 'myapp/lstm_model_Power_9.pt': No such file or directory
+rm: cannot remove 'tempNewDataPower.csv': No such file or directory
+rm: cannot remove 'Power_data.npz': No such file or directory
+rm: cannot remove 'myapp/lstm_model_Current_9.pt': No such file or directory
+rm: cannot remove 'tempNewDataCurrent.csv': No such file or directory
+rm: cannot remove 'Current_data.npz': No such file or directory
+Internal Server Error: /api/predict/current
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mert/simulations/docker/lstm-engine/myapp/views.py", line 203, in predict_current
+    response = predict(request, 'Current')
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mert/simulations/docker/lstm-engine/myapp/views.py", line 90, in predict
+    temperature_model = train(temperature_train_loader , 0.001,  model_type="LSTM")
+  File "/home/mert/simulations/docker/lstm-engine/myapp/gru_lstm_model_training.py", line 48, in train
+    model.to(device)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 989, in to
+    return self._apply(convert)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py", line 194, in _apply
+    self.flatten_parameters()
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py", line 180, in flatten_parameters
+    torch._cudnn_rnn_flatten_weight(
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+[28/May/2023 17:33:50] "POST /api/predict/current HTTP/1.1" 500 98148
+Internal Server Error: /api/predict/current
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mert/simulations/docker/lstm-engine/myapp/views.py", line 203, in predict_current
+    response = predict(request, 'Current')
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mert/simulations/docker/lstm-engine/myapp/views.py", line 90, in predict
+    temperature_model = train(temperature_train_loader , 0.001,  model_type="LSTM")
+  File "/home/mert/simulations/docker/lstm-engine/myapp/gru_lstm_model_training.py", line 48, in train
+    model.to(device)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 989, in to
+    return self._apply(convert)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py", line 194, in _apply
+    self.flatten_parameters()
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py", line 180, in flatten_parameters
+    torch._cudnn_rnn_flatten_weight(
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+[28/May/2023 17:33:52] "POST /api/predict/current HTTP/1.1" 500 98178
+Internal Server Error: /api/predict/current
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mert/simulations/docker/lstm-engine/myapp/views.py", line 203, in predict_current
+    response = predict(request, 'Current')
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mert/simulations/docker/lstm-engine/myapp/views.py", line 90, in predict
+    temperature_model = train(temperature_train_loader , 0.001,  model_type="LSTM")
+  File "/home/mert/simulations/docker/lstm-engine/myapp/gru_lstm_model_training.py", line 48, in train
+    model.to(device)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 989, in to
+    return self._apply(convert)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py", line 194, in _apply
+    self.flatten_parameters()
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py", line 180, in flatten_parameters
+    torch._cudnn_rnn_flatten_weight(
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+[28/May/2023 17:33:53] "POST /api/predict/current HTTP/1.1" 500 98149
+Internal Server Error: /api/predict/current
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mert/simulations/docker/lstm-engine/myapp/views.py", line 203, in predict_current
+    response = predict(request, 'Current')
+  File "/usr/local/lib/python3.10/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mert/simulations/docker/lstm-engine/myapp/views.py", line 90, in predict
+    temperature_model = train(temperature_train_loader , 0.001,  model_type="LSTM")
+  File "/home/mert/simulations/docker/lstm-engine/myapp/gru_lstm_model_training.py", line 48, in train
+    model.to(device)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 989, in to
+    return self._apply(convert)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py", line 194, in _apply
+    self.flatten_parameters()
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/rnn.py", line 180, in flatten_parameters
+    torch._cudnn_rnn_flatten_weight(
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED
+[28/May/2023 17:33:54] "POST /api/predict/current HTTP/1.1" 500 98150

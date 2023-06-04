@@ -1,0 +1,22 @@
+version: '2.4'
+
+services:
+  gpu-lstm:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+    environment:
+      - DJANGO_SETTINGS_MODULE=myproject.settings
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    command: ["bash", "start.sh"]
+    security_opt:
+      - seccomp:unconfined
+
